@@ -6,20 +6,24 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="10dp"
-    tools:context=".MainActivity">
+    tools:context=".LoginActivity">
 
-    <TextView
-        android:id="@+id/userInfoTxt"
+    <EditText
+        android:id="@+id/idEdt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="사용자정보"
-        android:gravity="right"/>
-
-    <ListView
-        android:id="@+id/marketLv"
-        android:layout_marginTop="10dp"
+        android:hint="아이디"
+        android:padding="10dp"/>
+    <EditText
+        android:id="@+id/pwEdt"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
-
+        android:layout_height="wrap_content"
+        android:hint="비밀번호"
+        android:padding="10dp"/>
+    <Button
+        android:id="@+id/loginBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="로그인"/>
 
 </LinearLayout>
